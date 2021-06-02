@@ -1,0 +1,28 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pipenv = "*"
+install = "*"
+django = "*"
+djangorestframework = "*"
+django-environ = "*"
+
+[dev-packages]
+flake8 = "*"
+isort = "*"
+django-werkzeug = "*"
+django-extensions = "*"
+django-debug-toolbar = "*"
+factory-boy = "*"
+ipdb = "*"
+
+[requires]
+python_version = "3.8"
+
+[scripts]
+manage = "python manage.py"
+server = "python manage.py runserver_plus 0.0.0.0:8002"
+test = "python manage.py test --settings=config.settings.base"
